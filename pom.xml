@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>java-maaven-app</groupId>
-    <artifactId>java-maven-app</artifactId>
-    <version>1.0-SNApSHOT</version>
+    <groupId>java-maven-app</groupId>
+    <artifactId>java-maven-app-1.0-SNAPSHOT</artifactId>
+    <version>1.1.7</version>
 
     <build>
         <pluginManagement>
