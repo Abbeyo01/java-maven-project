@@ -38,7 +38,7 @@ pipeline {
                     echo "deploying deploying the application"
                     //gv.deployApp()
                 }
-            }
+            //}
         }
     }   
 }
