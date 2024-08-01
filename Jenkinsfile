@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-       maven 'Maven'
+       maven 'maven-3.9'
     }
     //stages {
         //stage("init") {
@@ -25,7 +25,7 @@ pipeline {
                 script {
                     echo "building the image..."
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-                    sh 'docker build -t nanajanashia/demo-app:jma-2.0 .'
+                    sh 'docker build -t abbeyton/demo-app:jma-2.0 .'
                     sh "echo $PASS | docker login -u $USER --password-stdin"
                     sh 'docker push nanajanashia/demo-app:jma-2.0'
                     //gv.buildImage()
