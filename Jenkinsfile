@@ -2,6 +2,9 @@ def gv
 
 pipeline {
     agent any
+    tools {
+        maven 'Maven-3.9' // Use the name configured in Jenkins
+    }
     stages {
         stage("init") {
             steps {
